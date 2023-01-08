@@ -1,0 +1,36 @@
+{
+  "name": "星燎云博客",
+  "short_name": "www.dxeo.cn",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "description": "往昔今时临世，今宵今日诞辰。。",
+  "theme_color": "#ff6a6a", 
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-6bb635c1-f214-47fd-886f-162bf128c6b7/ff5f6ae7-5ade-4e63-813f-3b6797903046.jpg",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-6bb635c1-f214-47fd-886f-162bf128c6b7/ff5f6ae7-5ade-4e63-813f-3b6797903046.jpg",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-6bb635c1-f214-47fd-886f-162bf128c6b7/ff5f6ae7-5ade-4e63-813f-3b6797903046.jpg",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-6bb635c1-f214-47fd-886f-162bf128c6b7/ff5f6ae7-5ade-4e63-813f-3b6797903046.jpg",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
