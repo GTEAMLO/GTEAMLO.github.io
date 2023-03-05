@@ -1,0 +1,221 @@
+/* 页眉 */
+header {
+  background-color: #f44336;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #333;
+}
+
+.navbar a.active {
+  background-color: #fff;
+  color: #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+/* 侧边栏 */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #4caf50;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+  color: #333;
+}
+
+.sidebar a.active {
+  background-color: #fff;
+  color: #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+/* 主要内容区域 */
+main {
+  margin: 40px;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f44336;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* 页脚 */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 媒体查询 */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease;
+  }
+
+  .container.active .sidebar {
+    left: 0;
+  }
+
+  .sidebar a {
+    font-size: 24px;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .sidebar a.active {
+    background-color: transparent;
+    color: #f44336;
+    border-radius: 0;
+  }
+
+  main {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+/* 全局样式 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* 导航栏样式 */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* 主要内容样式 */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* 响应式样式 */
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+
+  section {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
